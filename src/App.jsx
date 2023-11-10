@@ -9,20 +9,18 @@ import MainLayout from "./component/Layout/MainLayout";
 
 // import pages
 import HomePage from "./page/Home";
-
-// Define some components to render for each page
-const AboutPage = () => <div>About page</div>;
-const ContactPage = () => <div>Contact page</div>;
-const NotFoundPage = () => <div>Not found!!!</div>;
+import ServicePage from "./page/Service";
+import BlogPage from "./page/Blog";
+import ContactPage from "./page/Contact";
 
 const App = () => {
   return (
     <div className="App">
       <MainLayout>
         <Route path="/" component={HomePage} />
-        <Route path="/service" component={AboutPage} />
-        <Route path="/blog" component={ContactPage} />
-        <Route path="/contact" component={NotFoundPage} />
+        <Route path="/service" component={ServicePage} />
+        <Route path="/blog" component={BlogPage} />
+        <Route path="/contact" component={ContactPage} />
       </MainLayout>
     </div>
   );

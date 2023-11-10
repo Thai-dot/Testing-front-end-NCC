@@ -6,10 +6,10 @@ import Navigation from "./Navigation";
 export default function MainLayout({ children }) {
   return (
     <div className="main-layout">
-      <aside className="col-span-1">
+      <aside className="main-layout-aside">
         <Navigation />
       </aside>
-      <main className="col-span-11 main-screen flex justify-between flex-col">
+      <main className="main-layout-main main-screen flex justify-between flex-col">
         {children}
         <Footer />
       </main>

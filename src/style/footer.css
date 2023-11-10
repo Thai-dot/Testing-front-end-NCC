@@ -1,6 +1,6 @@
 .footer {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-style: solid;
@@ -15,4 +15,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/*reponsive code */
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

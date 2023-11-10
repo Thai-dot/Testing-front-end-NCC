@@ -1,20 +1,25 @@
 .main-layout {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  
 }
 
-.col-span-1 {
+.main-layout-aside {
   grid-column: span 1 / span 1;
 }
 
-.col-span-11 {
+.main-layout-main {
   grid-column: span 11 / span 11;
 }
 
-.main-screen{
-    height: 100vh;
-    min-height: 100vh;
-
+.main-screen {
+  height: 100%;
+  min-height: 100vh;
 }
 
+/*responsive code */
+@media screen and (max-width: 1024px) {
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}

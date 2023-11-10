@@ -4,13 +4,18 @@
   padding-right: 8rem;
 }
 
+.logo {
+  width: 310px;
+  height: 122px;
+}
+
 /*hero section */
 
 .hero {
   margin-top: 30px;
-  padding-left: 16.8rem;
-  padding-right: 16.8rem;
-  padding-top: 2.375rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 2.3rem;
   padding-bottom: 2.5rem;
   background: #efefef;
 
@@ -21,9 +26,59 @@
   margin-bottom: 1.1rem;
   color: #000;
 
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/*value section */
+.value-section {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  gap: 25px;
+}
+
+.value-card-title {
+  margin-bottom: 8px;
+}
+
+/*responsive code */
+@media screen and (max-width: 1024px) {
+  .home-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .hero {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .value-section {
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 200px;
+    height: 80px;
+  }
+  .value-card-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .home-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .value-card-title {
+    font-size: 18px;
+  }
 }

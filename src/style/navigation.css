@@ -1,6 +1,14 @@
 .navigation {
   background-color: #191718;
-  height: 100vh;
+  height: 100%;
+}
+
+.navigation-desktop {
+  display: block;
+}
+
+.navigation-mobile {
+  display: none;
 }
 
 .nav-item {
@@ -29,4 +37,39 @@
 
 .nav-item:hover {
   background: #5c5c5c;
+}
+
+.bar-icon {
+  display: none;
+}
+
+/*reponsive code */
+@media screen and (max-width: 1024px) {
+  .navigation-desktop {
+    display: none;
+  }
+
+  .navigation-mobile {
+    display: block;
+    padding: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .bar-icon,
+  .close-icon {
+    display: block;
+    color: white;
+    margin-right: 12px;
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .bar-icon:hover,
+  .close-icon:hover {
+    color: rgb(227, 227, 227);
+    cursor: pointer;
+  }
+  .nav-item {
+    border: none;
+    font-size: 14px;
+  }
 }
