@@ -1,0 +1,29 @@
+.home-container {
+  padding-top: 1.2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+/*hero section */
+
+.hero {
+  margin-top: 30px;
+  padding-left: 16.8rem;
+  padding-right: 16.8rem;
+  padding-top: 2.375rem;
+  padding-bottom: 2.5rem;
+  background: #efefef;
+
+  width: 100%;
+}
+
+.hero-title {
+  margin-bottom: 1.1rem;
+  color: #000;
+
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
